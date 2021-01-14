@@ -1,0 +1,260 @@
+.store_name {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+}
+
+.button_row button {
+    background: #83b582;
+    height: 47px;
+    width: fit-content;
+    
+}
+
+.button_row button a {
+    color: white;
+    font-size: 16px;
+}
+
+li.button_row button {
+    height: 37px;
+    width: fit-content;
+    display: flex;
+}
+
+.questionaire {
+    width: 60%;
+    margin: auto;
+}
+
+.questionaire select {
+    font-size: 15px;
+    height: 39px !important;
+}
+
+.next_button {
+    width: ;
+}
+
+.content-check .check-content {
+    border-radius: 45px;
+    border: solid 1px #e0ddef;
+    background-color: #fff;
+    display: block;
+    padding: 10px 13px;
+    white-space: nowrap;
+}
+
+.content-check input:checked~.check-content {
+    box-shadow: 0 0 5px 0 rgba(3,169,244,.3);
+    border: solid 1px #83b582;
+    background-color: #d7ead6;
+    color: black;
+}
+
+.hide {
+    display: none !important;
+}
+
+.steps-box .step .btns {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: 40px auto 30px auto;
+}
+
+.steps-box .step .btns button {
+    margin: 0 6px;
+    width: fit-content;
+    margin-right: 4px !important;
+}
+
+.steps-box .step .ini-skip-btn {
+    width: 102px;
+    height: 36px;
+    border-radius: 4px;
+    border: solid 1px #e0ddef;
+    background-color: transparent;
+    text-align: center;
+    color: #b4afd3;
+    font-size: 13px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.skip_button {
+    border: 1px solid #83b582;
+}
+
+.content-check-row {
+    margin-top: 50px;
+}
+
+.content-check-row label {
+    width: 16%;
+    text-align: center;
+}
+
+.content-inner {
+    width: 1200px !important;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.page-tabs-container {
+    background-color: #fff;
+    overflow: auto;
+    box-shadow: 0 0 4px rgba(223,219,242,.85);
+    border-radius: 4px;
+}
+
+.navigation-tabs-wrapper {
+    overflow: auto;
+    padding-bottom: 2px;
+}
+
+.navigation-tabs {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #e0ddef;
+    width: fit-content;
+    min-width: 100%;
+}
+
+.navigation-tabs li.active {
+    border-bottom-color: #155ebc;
+}
+.navigation-tabs li {
+    margin: 0 15px;
+    position: relative;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.navigation-tabs li a {
+    display: block;
+    padding: 26px 0 16px;
+    font-size: 13px;
+    color: #2c2c35;
+    font-weight: bold;
+}
+
+.sidebar .nav .nav-item .nav-link i.menu-arrow, .sidebar .nav .nav-item .nav-link i.menu-arrow {
+    display: none !important;
+}
+
+.sidebar {
+    position: fixed;
+}
+
+.container-scroller .main-panel {
+    margin-left: 237px;
+}
+
+
+
+body {
+    font-family: "Poppins", Arial, sans-serif !important;
+}
+
+.opacity1 {
+    opacity: 1;
+}
+
+.dataTables_wrapper {
+    position: relative;
+    clear: both;
+}
+
+.features-table-container .dataTables_wrapper .datatable-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: solid 1px #e0ddef;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.datatable-header > div:first-child, .datatable-footer > div:first-child {
+    margin-left: 0;
+}
+.dataTables_filter {
+    position: relative;
+    display: block;
+    float: right;
+    margin: 0 0 20px 0;
+}
+
+.dataTables_filter > label {
+    margin-bottom: 0;
+    position: relative;
+}
+
+.dataTables_filter input {
+    outline: 0;
+    width: 200px;
+    height: 36px;
+    padding: 7px 12px;
+    padding-right: 36px;
+    font-size: 13px;
+    line-height: 1.5384616;
+    color: #333333;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+}
+
+.features-table-container .dataTables_wrapper .datatable-header .dt-buttons {
+    float: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.dt-buttons {
+    float: left;
+    display: inline-block;
+    margin: 0 0 20px 0;
+}
+
+.features-table-container .dataTables_wrapper .datatable-header .dt-buttons .btn-default {
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dt-buttons > .btn:first-child {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.dt-buttons > .btn + .btn {
+    margin-left: -1px;
+}
+
+footer ul li a, footer ul li span {
+    color: white !important;
+}
+
+.sidebar li.active span{
+    color: #022b3a !important;
+}
+
+.sidebar li span {
+    padding-left: 10px;
+}
+
+.sidebar li i {
+    color: white !important;
+}
+
+.sidebar li.active i {
+    color: #022b3a !important;
+}
