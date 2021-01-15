@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    {% include "base_head.html" %}
+
+</head>
+
+<body>
+
+    {% include "dashboard_header.html" %}
+    <div class="container-fluid page-body-wrapper">
+        <!-- partial:partials/_sidebar.html -->
+        {% include "sidebar.html" %}
+    </div>
+    <div class="main-panel">
+        <div class="row">
+            <div class="col-md-12 grid-margin">
+                <div class="d-flex justify-content-between align-items-center">
+                    <div>
+                        <h4>Home</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+
+    <script>
+        jQuery(document).ready(function ($) {
+
+            var path = window.location.pathname.split("/").pop();
+
+            if (path == '') {
+                path = '/';
+            }
+
+            var target = $('.nav li.nav-item a[href="' + path + '"]');
+            $('.nav li.nav-item').removeClass('active');
+            target.parent().addClass('active');
+
+        });
+    </script>
+
+</body>
+
+</html>
