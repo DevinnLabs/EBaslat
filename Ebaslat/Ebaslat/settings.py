@@ -78,7 +78,10 @@ WSGI_APPLICATION = 'Ebaslat.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': '',
+        'NAME': 'EBaşlat',
+        'USER' : 'postgres',
+        'PASSWORD' : 'newpass098',
+        'HOST': 'localhost'
     }
 }
 
