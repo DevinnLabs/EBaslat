@@ -1,0 +1,117 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include "base_head.html" %}
+</head>
+
+<body>
+    {% include "header.html" %}
+    <section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'images/bg_9.jpg' %});"
+        data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-end justify-content-center">
+                <div class="col-md-9 ftco-animate pb-5 text-center">
+                    <h1 class="mb-3 bread">Register</h1>
+                    <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-scroller">
+            <div class="container-fluid page-body-wrapper full-page-wrapper">
+                <!-- <div class="content-wrapper d-flex align-items-center auth px-0"> -->
+                <div class="row py-5">
+                    <div class="col-7 m-auto">
+                        <div class="store_name">
+                            <label class="store_label">Store Name</label>
+                            <input type="text" class="store_input">
+                        </div>
+                    </div>
+                </div>
+                <div class="container pb-5">
+                    <div class="row d-flex">
+                        <div class="col-md-5 m-auto">
+                            <div class="store_name">
+                                <label>Email Address</label>
+                                <input type="email" class="email_input">
+                            </div>
+                        </div>
+                        <div class="col-md-5 m-auto">
+                            <div class="store_name">
+                                <label>Password</label>
+                                <input type="password" class="pwd_input">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row py-5">
+                        <div class="col-md-5 m-auto">
+                            <div class="store_name">
+                                <label>Name</label>
+                                <input type="text" class="name_input">
+                            </div>
+                        </div>
+                        <div class="col-md-5 m-auto">
+                            <div class="store_name">
+                                <label>Phone number</label>
+                                <input type="tel" class="num_input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row pb-5 button_row">
+                    <div class="col-12 text-center">
+                        <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn m-auto"><a
+                                href="questionaire1">Create your own store</a></button>
+                    </div>
+                </div>
+                <!-- content-wrapper ends -->
+            </div>
+            <!-- page-body-wrapper ends -->
+        </div>
+        <!-- container-scroller -->
+
+        {% include "footer.html" %}
+        
+        <!-- loader -->
+        <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+                <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+                <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                    stroke="#F96D00" />
+            </svg></div>
+
+
+        <script src="{%static 'js/jquery.min.js' %}"></script>
+        <script src="{%static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+        <script src="{%static 'js/popper.min.js' %}"></script>
+        <script src="{%static 'js/bootstrap.min.js' %}"></script>
+        <script src="{%static 'js/jquery.easing.1.3.js' %}"></script>
+        <script src="{%static 'js/jquery.waypoints.min.js' %}"></script>
+        <script src="{%static 'js/jquery.stellar.min.js' %}"></script>
+        <script src="{%static 'js/owl.carousel.min.js' %}"></script>
+        <script src="{%static 'js/jquery.magnific-popup.min.js' %}"></script>
+        <script src="{%static 'js/aos.js' %}"></script>
+        <script src="{%static 'js/jquery.animateNumber.min.js' %}"></script>
+        <script src="{%static 'js/scrollax.min.js' %}"></script>
+        <script
+            src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+        <script src="{%static 'js/google-map.js' %}"></script>
+        <script src="{%static 'js/main.js' %}"></script>
+
+        <script src="{%static '/vendor.bundle.base.js' %}"></script>
+        <!-- endinject -->
+        <!-- inject:js -->
+        <script src="{%static '/off-canvas.js' %}"></script>
+        <script src="{%static '/hoverable-collapse.js' %}"></script>
+        <script src="{%static '/template.js' %}"></script>
+        <script src="{%static '/todolist.js' %}"></script>
+        <!-- endinject -->
+
+
+</body>
+
+</html>

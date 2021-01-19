@@ -1,0 +1,299 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {% include "base_head.html" %}
+</head>
+
+<body>
+    {% include "header.html" %}
+
+    <section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'images/bg_9.jpg' %});"
+        data-stellar-background-ratio="0.5">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row no-gutters slider-text align-items-end justify-content-center">
+                <div class="col-md-9 ftco-animate pb-5 text-center">
+                    <h1 class="mb-3 bread">Register</h1>
+                    <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <form class="steps-box" id="ini_steps">
+        <div class="step step-1 active" style="display: none;">
+            <p class="step-title">
+                Tell us more about your store <span class="stor-name-text"></span>
+            </p>
+            <p class="step-hint">
+                So we can help you make the most out of your trial
+            </p>
+            <div class="form-group inin-select-container err-log-container">
+                <label class="step-label">
+                    How do you currently sell your product? *
+                </label>
+                <select type="text" class="form-control inin-select select2-hidden-accessible" name="selling_channel"
+                    tabindex="-1" aria-hidden="true">
+                    <option value="" disabled="" selected="">--Please Select--</option>
+                    <option value="Social Media">
+                        I sell my products through social media
+                    </option>
+                    <option value="Marketplaces">
+                        I sell my products through online marketplaces such as Souq.com or Amazon
+                    </option>
+                    <option value="Retail Store">
+                        I sell my products from my retail store
+                    </option>
+                    <option value="Website">
+                        I sell my products through my own website
+                    </option>
+                    <option value="All Channels">
+                        I sell my products by all of the above
+                    </option>
+                    <option value="Not Selling">
+                        I don't sell any products yet
+                    </option>
+                    <option value="Building for Client">
+                        I am creating this store for another customer
+                    </option>
+                    <option value="Not Selling">
+                        I am only discover the solution
+                    </option>
+                </select><span class="select2 select2-container select2-container--default select2-container--below"
+                    dir="ltr" style="width: 100%;"><span class="selection"><span
+                            class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true"
+                            aria-expanded="false" tabindex="0"
+                            aria-labelledby="select2-selling_channel-du-container"><span
+                                class="select2-selection__rendered" id="select2-selling_channel-du-container" title="
+                                        I sell my products through online marketplaces such as Souq.com or Amazon
+                                    ">
+                                I sell my products through online marketplaces such as Souq.com or Amazon
+                            </span><span class="select2-selection__arrow" role="presentation"><b
+                                    role="presentation"></b></span></span></span><span class="dropdown-wrapper"
+                        aria-hidden="true"></span></span>
+                <span class="err-msg">
+                    <div class="empty-err">
+                        This field is required.
+                    </div>
+                </span>
+            </div>
+            <div class="form-group inin-select-container err-log-container">
+                <label class="step-label">
+                    How do you source your products? *
+                </label>
+                <select type="text" class="form-control inin-select select2-hidden-accessible" name="product_source"
+                    tabindex="-1" aria-hidden="true">
+                    <option value="" disabled="" selected="">--Please Select--</option>
+                    <option value="Dropshipping">
+                        I will use drop shipping
+                    </option>
+                    <option value="Own Products">
+                        I have my own products
+                    </option>
+                    <option value="Retail">
+                        I am a retailer and I get products from wholesalers
+                    </option>
+                    <option value="Multi Merchant">
+                        I will create a multi merchant store
+                    </option>
+                    <option value="Do Not Know">
+                        I don't know yet
+                    </option>
+                </select><span class="select2 select2-container select2-container--default select2-container--above"
+                    dir="ltr" style="width: 100%;"><span class="selection"><span
+                            class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true"
+                            aria-expanded="false" tabindex="0"
+                            aria-labelledby="select2-product_source-zd-container"><span
+                                class="select2-selection__rendered" id="select2-product_source-zd-container" title="
+                                        I am a retailer and I get products from wholesalers
+                                    ">
+                                I am a retailer and I get products from wholesalers
+                            </span><span class="select2-selection__arrow" role="presentation"><b
+                                    role="presentation"></b></span></span></span><span class="dropdown-wrapper"
+                        aria-hidden="true"></span></span>
+                <span class="err-msg">
+                    <div class="empty-err">
+                        This field is required.
+                    </div>
+                </span>
+            </div>
+            <div class="form-group inin-select-container err-log-container">
+                <label class="step-label">
+                    Do you have a registered business? *
+                </label>
+                <select type="text" class="form-control inin-select select2-hidden-accessible"
+                    name="registered_business" tabindex="-1" aria-hidden="true">
+                    <option value="" disabled="" selected="">--Please Select--</option>
+                    <option value="Yes">
+                        Yes
+                    </option>
+                    <option value="No">
+                        No
+                    </option>
+                    <option value="Not Yet">
+                        No, but I will register soon
+                    </option>
+                </select><span class="select2 select2-container select2-container--default select2-container--below"
+                    dir="ltr" style="width: 100%;"><span class="selection"><span
+                            class="select2-selection select2-selection--single" role="combobox" aria-haspopup="true"
+                            aria-expanded="false" tabindex="0"
+                            aria-labelledby="select2-registered_business-7r-container"><span
+                                class="select2-selection__rendered" id="select2-registered_business-7r-container" title="
+                                    No
+                                ">
+                                No
+                            </span><span class="select2-selection__arrow" role="presentation"><b
+                                    role="presentation"></b></span></span></span><span class="dropdown-wrapper"
+                        aria-hidden="true"></span></span>
+                <span class="err-msg">
+                    <div class="empty-err">
+                        This field is required.
+                    </div>
+                </span>
+            </div>
+            <label class="custom-check">
+                <input type="checkbox" class="hide" name="previous_website">
+                <i class="fa fa-check" aria-hidden="true"></i>
+                I have previous website
+            </label>
+            <div class="text-end">
+                <button class="ini-step-btn" type="button">
+                    Next
+                    <i class="fa fa-angle-right" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <div class="step step-2 p-5" style="display: block;">
+            <p class="step-title text-center">
+                What type of products will you be selling online?
+            </p>
+            <p class="step-hint text-center">
+                You can change this later
+            </p>
+            <div class="content-check-row">
+                <label class="content-check">
+                    <input type="checkbox" class="hide" name="products_types[]" value="food_drink">
+                    <span class="check-content">
+                        Food &amp; drink
+                    </span>
+                </label>
+                <label class="content-check">
+                    <input type="checkbox" class="hide" name="products_types[]" value="clothes_shoes">
+                    <span class="check-content">
+                        Clothes &amp; shoes
+                    </span>
+                </label>
+                <label class="content-check">
+                    <input type="checkbox" class="hide" name="products_types[]" value="health_beauty">
+                    <span class="check-content">
+                        Health &amp; beauty
+                    </span>
+                </label>
+                <label class="content-check">
+                    <input type="checkbox" class="hide" name="products_types[]" value="tech_products">
+                    <span class="check-content">
+                        Tech products
+                    </span>
+                </label>
+                <label class="content-check">
+                    <input type="checkbox" class="hide" name="products_types[]" value="Kids_and_baby">
+                    <span class="check-content">
+                        Kids &amp; baby
+                    </span>
+                </label>
+                <label class="content-check">
+                    <input type="checkbox" class="hide" name="products_types[]" value="Home_living">
+                    <span class="check-content">
+                        Home &amp; living
+                    </span>
+                </label>
+                <label class="content-check">
+                    <input type="checkbox" class="hide" name="products_types[]" value="Classes_events">
+                    <span class="check-content">
+                        Classes and events
+                    </span>
+                </label>
+                <label class="content-check">
+                    <input type="checkbox" class="hide" name="products_types[]" value="Arts_crafts">
+                    <span class="check-content">
+                        Arts &amp; crafts
+                    </span>
+                </label>
+                <label class="content-check">
+                    <input type="checkbox" class="hide" name="products_types[]" value="Jewelry_accessories">
+                    <span class="check-content">
+                        Jewelry &amp; accessories
+                    </span>
+                </label>
+                <label class="content-check">
+                    <input type="checkbox" class="hide" name="products_types[]" value="Fitness_wellness">
+                    <span class="check-content">
+                        Fitness &amp; wellness
+                    </span>
+                </label>
+                <label class="content-check">
+                    <input type="checkbox" class="hide" name="products_types[]" value="Sport">
+                    <span class="check-content">
+                        Sport
+                    </span>
+                </label>
+                <label class="content-check">
+                    <input type="checkbox" class="hide" name="products_types[]" value="Pet_supplies">
+                    <span class="check-content">
+                        Pet supplies
+                    </span>
+                </label>
+            </div>
+            <div class="btns">
+                <button class="btn btn-block btn-lg font-weight-medium auth-form-btn py-0 skip_button">
+                    <a href="dashboard/home">Skip</a>
+                </button>
+                <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn py-0">
+                    <a class="text-white" href="dashboard/home">Next</a>
+                </button>
+            </div>
+        </div>
+    </form>
+
+    {% include "footer.html" %}
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+            <circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+            <circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+                stroke="#F96D00" />
+        </svg></div>
+
+
+    <script src="{%static 'js/jquery.min.js' %}"></script>
+    <script src="{%static 'js/jquery-migrate-3.0.1.min.js' %}"></script>
+    <script src="{%static 'js/popper.min.js' %}"></script>
+    <script src="{%static 'js/bootstrap.min.js' %}"></script>
+    <script src="{%static 'js/jquery.easing.1.3.js' %}"></script>
+    <script src="{%static 'js/jquery.waypoints.min.js' %}"></script>
+    <script src="{%static 'js/jquery.stellar.min.js' %}"></script>
+    <script src="{%static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{%static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{%static 'js/aos.js' %}"></script>
+    <script src="{%static 'js/jquery.animateNumber.min.js' %}"></script>
+    <script src="{%static 'js/scrollax.min.js' %}"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="{%static 'js/google-map.js' %}"></script>
+    <script src="{%static 'js/main.js' %}"></script>
+
+    <script src="{%static '/vendor.bundle.base.js' %}"></script>
+    <!-- endinject -->
+    <!-- inject:js -->
+    <script src="{%static '/off-canvas.js' %}"></script>
+    <script src="{%static '/hoverable-collapse.js' %}"></script>
+    <script src="{%static '/template.js' %}"></script>
+    <script src="{%static '/todolist.js' %}"></script>
+    <!-- endinject -->
+
+
+</body>
+
+</html>
