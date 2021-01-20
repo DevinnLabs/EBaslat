@@ -3,58 +3,60 @@
 
 {% block content %}
 
-    <div class="main-panel">
+<div class="main-panel">
+    <div class="content-wrapper">
         <div class="row">
             <div class="col-md-12 grid-margin">
                 <div class="d-flex justify-content-between align-items-center">
                     <div>
-                        <h4>Products</h4>
+                        <h4 class="font-weight-bold mb-0">Products</h4>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="list-wrapper">
-            <div class="content-inner">
-                <div class="page-tabs-container">
-                    <div class="navigation-tabs-wrapper">
-                        <ul class="navigation-tabs">
-                            <li class="active">
-                                <a href="#">
-                                    Products
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="#">
-                                    Categories
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="#">
-                                    Options
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="#">
-                                    Reviews
-                                </a>
-                            </li>
-                            <li class="">
-                                <a href="#">
-                                    Brands
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div id="datatableGrid_wrapper" class="dataTables_wrapper no-footer">
-                        <div class="datatable-header">
+
+        <div class="row">
+            <div class="list-wrapper">
+                <div class="content-inner">
+                    <div class="page-tabs-container">
+                        <div class="navigation-tabs-wrapper">
+                            <ul class="navigation-tabs">
+                                <li class="active">
+                                    <a href="#">
+                                        Products
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#">
+                                        Categories
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#">
+                                        Options
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#">
+                                        Reviews
+                                    </a>
+                                </li>
+                                <li class="">
+                                    <a href="#">
+                                        Brands
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div id="datatableGrid_wrapper" class="dataTables_wrapper no-footer">
+                            <div class="datatable-header">
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <br>
-        <br>
-        <input type="button" class="button" value="Add Product">
     </div>
-    
+</div>
+
 {% endblock content %}

@@ -17,7 +17,7 @@
     <!-- End plugin css for this page -->
     
     <!-- inject:css -->
-    <link rel="stylesheet" href="{% static 'css/style3.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style_dashboard.css' %}">
     <!-- endinject -->
     
     <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" />
@@ -27,36 +27,38 @@
 </head>
 
 <body>
+    <div class="container-scroller">
 
-    <nav class="navbar px-md-0 navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light scrolled awake"
-        id="ftco-navbar" style="z-index: 14;">
-        <div class="container-fluid px-md-5">
-            <p class="m-0"> <a class="navbar-brand" href="/" style="padding-bottom: 0;font-size: 30px;">E başlat</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-                    aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="oi oi-menu"></span> Menu
-                </button>
+        <nav class="navbar px-md-0 navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light scrolled awake"
+            id="ftco-navbar">
+            <div class="container-fluid px-md-5">
+                <p class="m-0"> <a class="navbar-brand" href="/" style="padding-bottom: 0;font-size: 30px;">E başlat</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+                        aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="oi oi-menu"></span> Menu
+                    </button>
 
-            </p>
-            <div class="collapse navbar-collapse" id="ftco-nav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="./estore-master/index.html" class="nav-link">View My Store</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
-                </ul>
+                </p>
+                <div class="collapse navbar-collapse" id="ftco-nav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a href="./estore-master/index.html" class="nav-link">View My Store</a></li>
+                        <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
+                    </ul>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
 
-    <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_sidebar.html -->
-        {% include "dashboard/sidebar.html" %}
+        <div class="container-fluid page-body-wrapper">
+            <!-- partial:partials/_sidebar.html -->
+            {% include "dashboard/sidebar.html" %}
+
+            {% block content %}
+            
+            {% endblock content %}
+        </div>
     </div>
 
-    {% block content %}
-    
-    {% endblock content %}
-
-      <!-- plugins:js -->
+    <!-- plugins:js -->
     <script src="{% static 'vendors/base/vendor.bundle.base.js' %}"></script>
     <!-- endinject -->
     <!-- Plugin js for this page-->
