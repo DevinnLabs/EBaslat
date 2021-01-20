@@ -1,19 +1,8 @@
+{% extends 'dashboard/base.html' %}
 {% load static %}
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
+{% block content %}
 
- {% include "base_head_dashboard.html" %}
-
-</head>
-
-<body>
-    {% include "dashboard_header.html" %}
-    <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_sidebar.html -->
-        {% include "sidebar.html" %}
-    </div>
     <div class="main-panel">
         <div class="row">
             <div class="col-md-12 grid-margin">
@@ -26,8 +15,4 @@
         </div>
     </div>
 
-    {% include "base_footer_dashboard.html" %}
-
-</body>
-
-</html>
+{% endblock content %}

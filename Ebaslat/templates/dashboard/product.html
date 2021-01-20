@@ -1,16 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'dashboard/base.html' %}
+{% load static %}
 
-<head>
-    {% include "base_head_dashboard.html" %}
-</head>
+{% block content %}
 
-<body>
-    {% include "dashboard_header.html" %}
-    <div class="container-fluid page-body-wrapper">
-        <!-- partial:partials/_sidebar.html -->
-        {% include "sidebar.html" %}
-    </div>
     <div class="main-panel">
         <div class="row">
             <div class="col-md-12 grid-margin">
@@ -63,7 +55,6 @@
         <br>
         <br>
         <input type="button" class="button" value="Add Product">
-        {% include "base_footer_dashboard.html" %}
-</body>
-
-</html>
+    </div>
+    
+{% endblock content %}
