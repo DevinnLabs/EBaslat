@@ -3,71 +3,88 @@
 
 {% block content %}
 
-    <section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'images/bg_9.jpg' %});"
-        data-stellar-background-ratio="0.5">
-        <div class="overlay"></div>
-        <div class="container">
-            <div class="row no-gutters slider-text align-items-end justify-content-center">
-                <div class="col-md-9 ftco-animate pb-5 text-center">
-                    <h1 class="mb-3 bread">Register</h1>
-                    <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p> -->
-                </div>
+<section class="hero-wrap hero-wrap-2" style="background-image: url({% static 'images/bg_9.jpg' %});"
+    data-stellar-background-ratio="0.5">
+    <div class="overlay"></div>
+    <div class="container">
+        <div class="row no-gutters slider-text align-items-end justify-content-center">
+            <div class="col-md-9 ftco-animate pb-5 text-center">
+                <h1 class="mb-3 bread">Register</h1>
+                <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i class="ion-ios-arrow-forward"></i></a></span> <span>About us <i class="ion-ios-arrow-forward"></i></span></p> -->
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section>
-        <div class="container-scroller">
-            <div class="container-fluid page-body-wrapper full-page-wrapper">
-                <!-- <div class="content-wrapper d-flex align-items-center auth px-0"> -->
-                <div class="row py-5">
-                    <div class="col-7 m-auto">
-                        <div class="store_name">
-                            <label class="store_label">Store Name</label>
-                            <input type="text" class="store_input">
+<section>
+    <div class="container-scroller">
+        <div class="container-fluid page-body-wrapper full-page-wrapper">
+
+            <form action="register" method="POST">
+                {% csrf_token %}
+
+                <section class="signup">
+                    <div class="container">
+                        <div class="signup-content">
+                            <h2>Create Your Own account</h2>
+                            <div class="form-group">
+                                {{form.first_name }}
+                            </div>
+                            <div class="form-group">
+                                {{form.last_name }}
+                            </div>
+                            <div class="form-group">
+                                {{form.email }}
+                            </div>
+                            <div class="form-group">
+                                {{form.password1 }}
+                            </div>
+                            <div class="form-group">
+                                {{form.password2}}
+                            </div>
+
+                            <div class="row py-3 button_row">
+                                <div class="col-12 text-center">
+                                    <input type="submit"
+                                        class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn m-auto"
+                                        name="Create User">
+                                </div>
+                            </div>
+                            <p class="loginhere">
+                                Have already an account ? <a href="login" class="loginhere-link">Login here</a>
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="container pb-5">
-                    <div class="row d-flex">
-                        <div class="col-md-5 m-auto">
-                            <div class="store_name">
-                                <label>Email Address</label>
-                                <input type="email" class="email_input">
-                            </div>
-                        </div>
-                        <div class="col-md-5 m-auto">
-                            <div class="store_name">
-                                <label>Password</label>
-                                <input type="password" class="pwd_input">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row py-5">
-                        <div class="col-md-5 m-auto">
-                            <div class="store_name">
-                                <label>Name</label>
-                                <input type="text" class="name_input">
-                            </div>
-                        </div>
-                        <div class="col-md-5 m-auto">
-                            <div class="store_name">
-                                <label>Phone number</label>
-                                <input type="tel" class="num_input">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row pb-5 button_row">
-                    <div class="col-12 text-center">
-                        <button class="btn btn-block btn-primary btn-lg font-weight-medium auth-form-btn m-auto"><a
-                                href="questionaire1">Create your own store</a></button>
-                    </div>
-                </div>
-                <!-- content-wrapper ends -->
-            </div>
-            <!-- page-body-wrapper ends -->
+                </section>
+            </form>
+            <!-- content-wrapper ends -->
         </div>
-        <!-- container-scroller -->
-        
+        <!-- page-body-wrapper ends -->
+    </div>
+    <!-- container-scroller -->
+
+    <!-- //Query All input fields -->
+
+</section>
+
 {% endblock content %}
+
+{% block script %}
+
+<script>
+    var form_fields = document.getElementsByTagName('input')
+    form_fields[1].placeholder = 'Name';
+    form_fields[2].placeholder = 'Username';
+    form_fields[3].placeholder = 'Email';
+    form_fields[4].placeholder = 'Password';
+    form_fields[5].placeholder = 'Re-enter Password';
+
+
+    for (var field in form_fields) {
+        form_fields[field].className += ' form-control'
+    }
+</script>
+<script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+<script src="{% static 'js/register.js' %}"></script>
+
+{% endblock script %}
