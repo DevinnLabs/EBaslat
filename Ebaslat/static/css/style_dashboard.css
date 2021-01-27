@@ -20968,7 +20968,6 @@ dl li {
 .list-wrapper {
     height: 100%;
     max-height: 361px;
-    overflow: scroll;
 }
 
 .list-wrapper ul {

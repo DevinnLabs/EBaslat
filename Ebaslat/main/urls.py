@@ -13,7 +13,8 @@ urlpatterns = [
     path('register', views.register, name = 'register'),
     path('questionaire1', views.questionaire1, name = 'questionaire1'),
     path('questionaire2', views.questionaire2, name = 'questionaire2'),
-    path('login', views.login, name = 'login'),
+    # path('login', views.loginPage, name = 'login'),
+    # path('logout', views.logoutUser, name = 'logout'),
 ] 
 
 urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

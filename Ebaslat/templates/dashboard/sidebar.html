@@ -2,48 +2,48 @@
     <div>
         <ul class="nav">
             <li class="nav-item">
-                <a class="nav-link" href="home">
+                <a class="nav-link" href="{% url 'home' %}">
                     <i class="fas fa-home"></i>
                     <span class="menu-title active">Home</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a href="orders" class="nav-link">
+                <a href="{% url 'orders' %}" class="nav-link">
                     <i class="fas fa-truck"></i>
                     <span class="menu-title">Orders</span>
                 </a>
             <li class="nav-item">
-                <a class="nav-link" href="products">
+                <a class="nav-link" href="{% url 'products' %}">
                     <i class="fas fa-cube"></i>
                     <span class="menu-title">Products</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="customers">
+                <a class="nav-link" href="{% url 'customers' %}">
                     <i class="fas fa-user-plus"></i>
                     <span class="menu-title">Customers</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="marketing">
+                <a class="nav-link" href="{% url 'marketing' %}">
                     <i class="fas fa-search-dollar"></i>
                     <span class="menu-title">Marketing</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="customize_store">
+                <a class="nav-link" href="{% url 'customize_store' %}">
                     <i class="fas fa-sliders-h"></i>
                     <span class="menu-title">Customize Store</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="analytics">
+                <a class="nav-link" href="{% url 'analytics' %}">
                     <i class="fas fa-chart-area"></i>
                     <span class="menu-title">Analytics</span>
                 </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="settings">
+                <a class="nav-link" href="{% url 'settings' %}">
                     <i class="fas fa-cog"></i>
                     <span class="menu-title">Settings</span>
                 </a>
