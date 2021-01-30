@@ -4,6 +4,7 @@ from django.contrib.auth.models import User, auth
 from django.contrib import auth, messages
 from django.contrib.auth.decorators import login_required
 from .decorators import UnauthenticatedUser
+from .forms import *
 
 # Create your views here.
 @login_required(login_url = 'login')

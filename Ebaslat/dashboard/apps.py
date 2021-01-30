@@ -5,4 +5,4 @@ class DashboardConfig(AppConfig):
     name = 'dashboard'
 
     def ready(self):
-        import Ebaslat.dashboard.signals
+        import dashboard.signals

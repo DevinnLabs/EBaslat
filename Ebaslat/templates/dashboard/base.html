@@ -45,8 +45,8 @@
                         <li class="nav-item"><a href="#" class="nav-link">Profile</a></li>
                     </ul>
                 </div>
-                <span>Hello, </span>
-                <span><a href="logout">Logout</a></span>
+                {% comment %} <span>Hello, </span> {% endcomment %}
+                <span><a href="{% url 'logout' %}" class="">Logout</a></span>
             </div>
         </nav>
 

@@ -3,12 +3,13 @@ from django.dispatch import receiver
 from django.contrib.auth.models import User
 from .models import Store
 
-@receiver(post_save, Sender = User)
+@receiver(post_save, sender = User)
 def CreateStore(sender, instance, created, **kwargs):
-    if created:
-        Store.objects.create(user = instance)
+    pass
+    # if created:
+    #     Store.objects.create(user = instance)
 
-@receiver(post_save, Sender = User)
+@receiver(post_save, sender = User)
 def UpdateStore(sender, instance, created, **kwargs):
     if created == False:
-        Store.objects.save()
+        pass# Store.objects
